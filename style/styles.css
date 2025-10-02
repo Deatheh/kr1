@@ -324,9 +324,8 @@ main.content {
     /* Отступ сверху */
 }
 
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.news-flex {
+    display: flex;
     gap: 30px;
 }
 
@@ -396,9 +395,8 @@ main.content {
     height: 200px;
 }
 
-.information-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.information-flex {
+    display: flex;
     gap: 40px;
 }
 
@@ -447,6 +445,7 @@ main.content {
     .nav-list {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
 
     .skills-grid {
@@ -463,8 +462,17 @@ main.content {
 
     .goods-container {
         gap: 15px;
+        flex-direction: column;
     }
-    .information-grid {
-        gap: 20px;
+
+    .information-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .news-flex {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
     }
 }
