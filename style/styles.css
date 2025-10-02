@@ -418,7 +418,7 @@ main.content {
     transition: transform 0.3s ease;
 }
 
-#callMe {
+.contact-button {
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     color: white;
     /* Белый цвет текста */
@@ -435,7 +435,7 @@ main.content {
     transition: all 0.3s ease;
 }
 
-#callMe:hover {
+.contact-button:hover {
     transform: translateY(-3px);
     /* Поднятие элемента при наведении */
     box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
