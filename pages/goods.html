@@ -6,39 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Семестровая работа</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="page-container">
-        <header class="header">
-            <h1>Хэдер</h1>
+        <header>
+            <nav class="navbar bg-primary ">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="#">
+                        <img src="../images/go.png" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        Товары
+                    </a>
+                </div>
+            </nav>
         </header>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-info-subtle">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="../index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="goods.html">Товары</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="practices.html">Практики</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <main class="content">
             <h2 class="profile-title">Товары</h2>
             <div class="goods-container">
-                <div class="product">
-                    <h2>Палачка (бузинная)</h2>
-                    <img src="../images/goods1.jpg" alt="Фото продукта" width="200" height="250">
-                    <p class="price">Цена: 13р (оптом дешевле)</p>
+                <div class="card" style="width: 18rem;">
+                        <img src="../images/goods1.jpg" width="250" height="250" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Палачка (бузинная)</h5>
+                            <p class="price">Цена: 13р (оптом дешевле)</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
                 </div>
-                <div class="product">
-                    <h2>Уточка (небузинная)</h2>
-                    <img src="../images/goods2.jpg" alt="Фото продукта" width="200" height="250">
-                    <p class="price">Цена: 13000р (оптом дороже)</p>
+                <div class="card" style="width: 18rem;">
+                        <img src="../images/goods2.jpg" width="250" height="250"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Уточка (небузинная)</h5>
+                            <p class="price">Цена: 13000р (оптом дороже)</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
                 </div>
-                <div class="product">
-                    <h2>Дорожный знак</h2>
-                    <img src="../images/goods3.jpg" alt="Фото продукта" width="200" height="250">
-                    <p class="price">Цена: 1500р </p>
+                <div class="card" style="width: 18rem;">
+                        <img src="../images/goods3.jpg" width="250" height="250"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Дорожный знак</h5>
+                            <p class="price">Цена: 1500р</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
                 </div>
             </div>
         </main>
@@ -46,7 +84,9 @@
             <p>Футер</p>
         </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
